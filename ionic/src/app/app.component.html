@@ -1,0 +1,37 @@
+<ion-app>
+  
+
+
+  <ion-split-pane when="md" contentId="main">
+    <ion-menu style="max-width: 10px;" contentId="main">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding"> 
+        <!-- <mat-drawer-container autosize>
+          <mat-drawer #drawer opened="true" mode="side" position="start">
+          <mat-nav-list>
+               -->
+              <mat-list-item>
+                  <button (click)="m1()" routerLink="" mat-button> Home</button>
+              </mat-list-item>
+              <mat-list-item>
+                  <button (click)="m2()" routerLink="slider" mat-button>activity</button>
+              </mat-list-item>
+              <mat-list-item>
+                  <button (click)="m3()" routerLink="table" mat-button> account</button>
+              </mat-list-item>
+          <!-- </mat-nav-list>
+          </mat-drawer>
+          
+        </mat-drawer-container> -->
+         </ion-content>
+    </ion-menu>
+  
+    <div class="ion-page" id="main">
+      <ion-router-outlet></ion-router-outlet>
+    </div>
+  </ion-split-pane>
+  </ion-app>

@@ -1,0 +1,28 @@
+<ion-tabs>
+  <ion-tab-bar *ngIf="!desktop" class  color="primary" slot="bottom">
+
+    <ion-tab-button *ngIf="!isSmallScreen" tab="side-menu " >
+      <ion-icon name="cog"></ion-icon>
+      <ion-label>menu</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="home" >
+      <ion-icon name="cog"></ion-icon>
+      <ion-label>home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="entities">
+      <ion-icon name="grid"></ion-icon>
+      <ion-label>entities</ion-label>
+    </ion-tab-button>
+
+   
+ 
+    <ion-tab-button tab="account">
+      <ion-icon name="analytics"></ion-icon>
+      <ion-label>account</ion-label>
+    </ion-tab-button> 
+     
+    
+  </ion-tab-bar>
+</ion-tabs>

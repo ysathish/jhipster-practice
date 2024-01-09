@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> welcome </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding ">
+  <!-- <ion-split-pane when="xs"></ion-split-pane> -->
+  <span class="hipster"></span>
+  <div class="width">
+    <div style="width:400px;height:400px;">
+    <ion-button expand="block" routerLink="/login" id="signIn">{{ 'LOGIN' | translate }}</ion-button>
+
+    <p>{{ 'NO_ACCOUNT_MESSAGE' | translate }}</p>
+    <ion-button expand="block" routerLink="/signup">{{ 'SIGNUP' | translate }}</ion-button>
+  </div>
+</div>
+</ion-content>
